@@ -136,7 +136,7 @@ public class Main {
             }
         }
         System.out.println(greaterThan50);
-        System.out.println("Stream, ");
+        System.out.println("Stream, filter, collect:");
         greaterThan50 = entries.stream().
                 filter(entry -> entry.getDuration()>50).
                 collect(Collectors.toList());
